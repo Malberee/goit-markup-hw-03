@@ -38,6 +38,11 @@ body {
     color: var(--secondary-text-color);
 }
 
+.specification-list {
+    display: flex;
+    justify-content: space-around;
+}
+
 .header {
     background-color: var(--white-color);
 }
@@ -206,6 +211,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    
 }
 
 .team-paragraph {
@@ -217,6 +223,11 @@ body {
     color: var(--primary-text-color);
 }
 
+.team-list {
+    display: flex;
+    justify-content: space-around;
+}
+
 .team-item {
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -225,7 +236,6 @@ body {
 
 .portfolio-item {
     background: var(--white-color);
-
 }
 
 .portfolio-title {
