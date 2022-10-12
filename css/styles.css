@@ -45,7 +45,16 @@ img {
 }
 
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .index-title {
@@ -87,14 +96,12 @@ img {
 
 .header {
     background-color: var(--white-color);
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .header-logo {
@@ -105,6 +112,8 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .header-logo-item {
@@ -122,6 +131,10 @@ img {
     margin-left: 93px;
 }
 
+.header-item {
+    
+}
+
 .header-contacts {
     display: flex;
     gap: 50px;
@@ -134,6 +147,9 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-block;
 }
 
 .header-mail,
@@ -144,6 +160,9 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-block;
 }
 
 .header-mail:hover,
@@ -182,8 +201,7 @@ img {
     border-radius: 4px;
     border-color: transparent;
     cursor: pointer;
-    width: 216px;
-    height: 50px;
+    padding: 10px 32px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -216,11 +234,17 @@ img {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    gap: 30px;
+    margin-left: -30px;
+    
+}
+
+.advances-content {
+
 }
 
 .advances-item {
-    flex-basis: calc();
+    margin-left: 30px;
+    flex-basis: calc(100% / 4);
 }
 
 .advances-title {
@@ -242,12 +266,11 @@ img {
 
 /*------------------SPECIFICATION------------------*/
 
-.specification {
-    
+.specification { 
+    padding-top: 0;
 }
 
 .specification-container {
-
 }
 
 .specification-title {
@@ -304,8 +327,11 @@ img {
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    height: 368px;
+}
+
+.team-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-member {
@@ -315,6 +341,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-bottom: 10px;
 }
 
 .team-paragraph {
@@ -334,13 +361,12 @@ img {
 
 .footer {
     background-color: var(--background-hero-footer);
-    font-family: 'Roboto';
-    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
 }
 
 .footer-logo {
@@ -359,6 +385,7 @@ img {
 
 .address {
     font-style: normal;
+    margin-top: 20px;
 }
 
 .footer-mail,
@@ -386,20 +413,17 @@ img {
     
 }
 
-.footer-item {
-    padding-top: 9px;
+.footer-item:not(:first-child) {
+    margin-top: 9px;
 }
 
 /*------------------FILTERS------------------*/
 
-.filters-container {
-    display: flex;
-    justify-content: center;
-}
-
 .filters-list {
     display: flex;
+    justify-content: center;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .filter-button {
@@ -459,6 +483,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
+    margin-bottom: 4px;
 }
 
 .portfolio-paragraph {
